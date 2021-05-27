@@ -134,7 +134,7 @@ MAHALANOBIS: AUROC 84.4 % --- FRR (95% TRR) 44.6 %
 ```
 Plot:
 <p align="center">
-<img src="https://github.com/doctoricml2021/DOCTOR/blob/main/DOCTOR.png?raw=true" width="500"/>
+<img src="https://github.com/doctor-public-submission/DOCTOR/blob/main/DOCTOR.png?raw=true" width="500"/>
 </p>
 
 Experiments with OOD samples: 

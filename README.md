@@ -119,14 +119,14 @@ foo@bar:~$ source activate doctor
 ```
 - Launch the test from CLI for CIFAR10:
 ```console
-(doctor) foo@bar:~$ python main.py -d_name cifar10 -sc tbb -ood False
-(doctor) foo@bar:~$ python main.py -d_name cifar10 -sc pbb -ood False
-(doctor) foo@bar:~$ python main.py -d_name cifar10 -sc tbb -ood True
-(doctor) foo@bar:~$ python main.py -d_name cifar10 -sc pbb -ood True
+(doctor) foo@bar:~$ python main.py -d_name cifar10 -sc tbb 
+(doctor) foo@bar:~$ python main.py -d_name cifar10 -sc pbb 
+(doctor) foo@bar:~$ python main.py -d_name cifar10 -sc tbb 
+(doctor) foo@bar:~$ python main.py -d_name cifar10 -sc pbb 
 ```
 Output:
 ```console
-(doctor) foo@bar:~$ python main.py -d_name cifar10 -sc pbb -ood False
+(doctor) foo@bar:~$ python main.py -d_name cifar10 -sc pbb -ood 
 ALPHA: AUROC 95.2 % --- FRR (95% TRR) 13.9 %
 BETA: AUROC 94.8 % --- FRR (95% TRR) 13.4 %
 ODIN: AUROC 94.2 % --- FRR (95% TRR) 18.4 %

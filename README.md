@@ -147,6 +147,7 @@ ODIN (DEFAULT SETTING OF ODIN) : AUROC 93.5 % / 0.0 % --- FRR 30.6 % / 0.4 %
 ```
 Note that, the name of the dataset to set is <code>out-dataset-name_in-dataset-name.csv</code>.
 
+Click [here](https://drive.google.com/file/d/1v0h_1-22rGmqm1HBb-NK2e1zF9QXhc4P/view?usp=sharing) to download the datasets for OOD experiments.
 
 #### Enviroment
 We run each experiment on a machine equipped with an Intel(R) Xeon(R) 

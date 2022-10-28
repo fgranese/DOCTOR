@@ -15,6 +15,7 @@ The results in the tables below reported in terms of AUROC% / FRR% (95% TRR).
 |[Amazon_Fashion](https://nijianmo.github.io/amazon/index.html)| <b>89.7</b> / 27.1 | <b>89.7 / 26.3 </b> | 87.4 / 50.1 | - / - |
 |[Amazon_Software](https://nijianmo.github.io/amazon/index.html)| <b>68.8 / 73.2</b> | <b>68.8 / 73.2</b> | 67.3 / 86.6 | - / - |
 |[IMDb](https://www.imdb.com/interfaces/)| <b>84.4 / 54.2</b> | <b>84.4</b> / 54.4 | 83.7 / 61.7 | - / - |
+
 2- Partially-Black-Box (PBB)
 
 | Dataset |D_alpha | D_beta | ODIN | MHLNB | 

@@ -122,8 +122,6 @@ foo@bar:~$ source activate doctor
 ```console
 (doctor) foo@bar:~$ python main.py -d_name cifar10 -sc tbb 
 (doctor) foo@bar:~$ python main.py -d_name cifar10 -sc pbb 
-(doctor) foo@bar:~$ python main.py -d_name cifar10 -sc tbb 
-(doctor) foo@bar:~$ python main.py -d_name cifar10 -sc pbb 
 ```
 Output:
 ```console

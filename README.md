@@ -1,3 +1,8 @@
+# TODO
+- [x] Improve g score computation speed.
+- [ ] Add g score commputation via R'enyi entropy
+- [ ] Deep cleaning of the code
+
 # DOCTOR
 DOCTOR aims to identify whether the prediction of a classifier should or should not be trusted 
 so that to choose between accepting or rejecting the prediction.

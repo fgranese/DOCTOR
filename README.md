@@ -1,4 +1,7 @@
-# TODO
+# DOCTOR extended
+In this fork we implement improvements to our code for the paper [DOCTOR: A Simple Method for Detecting
+Misclassification Errors](https://arxiv.org/pdf/2106.02395.pdf) before pushing them to the main repository [https://github.com/doctor-public-submission/DOCTOR/](https://github.com/doctor-public-submission/DOCTOR/).
+### TODO
 - [x] Improve g score computation speed.
 - [ ] Add g score commputation via R'enyi entropy
 - [ ] Deep cleaning of the code

@@ -1,11 +1,3 @@
-# DOCTOR extended
-In this fork we implement improvements to our code for the paper [DOCTOR: A Simple Method for Detecting
-Misclassification Errors](https://arxiv.org/pdf/2106.02395.pdf) before pushing them to the main repository [https://github.com/doctor-public-submission/DOCTOR/](https://github.com/doctor-public-submission/DOCTOR/).
-### TODO
-- [x] Improve g score computation speed.
-- [ ] Add g score commputation via R'enyi entropy
-- [ ] Deep cleaning of the code
-
 # DOCTOR
 DOCTOR aims to identify whether the prediction of a classifier should or should not be trusted 
 so that to choose between accepting or rejecting the prediction.
@@ -38,21 +30,21 @@ Package
 ├── data
 ├── datasets
 ├── lib_discriminators
-│   ├── discriminators.py
+│   ├── discriminators.py
 ├── models
-│   └── sigmoid_nn.py
+│   └── sigmoid_nn.py
 ├── mystat
-│   └── statistics.py
+│   └── statistics.py
 ├── plots
 ├── tests
-│   ├── compute_FRR_vs_TRR.py
-│   └──  test_FRR_vs_TRR.py
+│   ├── compute_FRR_vs_TRR.py
+│   └──  test_FRR_vs_TRR.py
 ├── utils
-│   ├── GUI_tools.py
-│   ├── dataset_utils.py
-│   ├── files_utils.py
-│   ├── var_utils.py
-│   └── plot_utils.py
+│   ├── GUI_tools.py
+│   ├── dataset_utils.py
+│   ├── files_utils.py
+│   ├── var_utils.py
+│   └── plot_utils.py
 ├── main.py
 ├── test_wrapper.py
 ├── README.md
@@ -96,15 +88,15 @@ Dataframe are stored in the corresponding directory.
 For CIFAR10:
 ```
 ├── data
-│   ├── cifar10_T_1_eps_0_test.csv
-│   ├── cifar10_T_1_eps_0_train.csv
-│   └── cifar10_T_1_eps_0_train_logits.csv
+│   ├── cifar10_T_1_eps_0_test.csv
+│   ├── cifar10_T_1_eps_0_train.csv
+│   └── cifar10_T_1_eps_0_train_logits.csv
 ├── data_perturb
-│   └── cifar10_T_1.3_eps_0_pt_odin_test.csv
+│   └── cifar10_T_1.3_eps_0_pt_odin_test.csv
 ├── data_perturb_our
-│   ├── cifar10_T_1.5_eps_0.00035_pt_beta_test.csv
-│   ├── cifar10_T_1_eps_0.0002_pt_mahalanobis_test_logits.csv
-│   └── cifar10_T_1_eps_0.00035_pt_alpha_test.csv
+│   ├── cifar10_T_1.5_eps_0.00035_pt_beta_test.csv
+│   ├── cifar10_T_1_eps_0.0002_pt_mahalanobis_test_logits.csv
+│   └── cifar10_T_1_eps_0.00035_pt_alpha_test.csv
 
 ```
 #### Usage

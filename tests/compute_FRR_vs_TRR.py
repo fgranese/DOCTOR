@@ -12,7 +12,7 @@ PROGRESS_BAR = 50
 
 METHOD_NAMES = enum(ODIN='odin', SR='sr', BETA='beta', ALPHA='alpha', MAHALANOBIS='mahalanobis')
 
-def compute_FRR_TRR(method_name, dataset_name, df, wrong, correct, T, eps, dt_type, pt_type, alpha=2, GAMMAS=10000, logits=False, normalization_kind=NORMALIZATION_KIND.ALREADY):
+def compute_FRR_TRR(method_name, dataset_name, df, wrong, correct, T, eps, dt_type, pt_type, alpha=2, GAMMAS=10000, logits=False, normalization_kind=NORMALIZATION_KIND.ALREADY,  fast_g_xFlag:bool=True):
     gui_tool = GUI_tools.GUI_tools()
 
     if normalization_kind == NORMALIZATION_KIND.LOGITS:
@@ -27,7 +27,10 @@ def compute_FRR_TRR(method_name, dataset_name, df, wrong, correct, T, eps, dt_ty
         if method_name == METHOD_NAMES.BETA:
             F = doctor_ratio(pe_x(df))
         elif method_name == METHOD_NAMES.ALPHA:
-            F = doctor_ratio(g_x(df, alpha))
+            if fast_g_xFlag:
+                F = doctor_ratio(fast_g_x(df, alpha))
+            else:
+                F = doctor_ratio(g_x(df, alpha))
         elif method_name == METHOD_NAMES.ODIN or method_name == METHOD_NAMES.SR:
             F = soft_odin(df)
         elif method_name == METHOD_NAMES.MAHALANOBIS:
